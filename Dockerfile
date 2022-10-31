@@ -1,3 +1,12 @@
 FROM ubuntu:latest
-CMD echo"salam al 3alam   123321  5 5 55 "
-CMD echo"salam again 2"
+CMD     #!/bin/bash  
+      
+    # Read the user input   
+      
+    echo "Enter the user name: "  
+    read first_name  
+    echo "The Current User Name is $first_name"  
+    echo  
+    echo "Enter other users'names: "  
+    read name1 name2 name3  
+    echo "$name1, $name2, $name3 are the other users."  
