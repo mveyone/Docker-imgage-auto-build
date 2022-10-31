@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag  mveyone/docker-imgage-auto-build:latest
     -  name: Push the docker image
-       run: docker login -u mveyone -p ${{ secrets.DOCKER_TOKEN }} && docker push mveyone/Docker-imgage-auto-build:latest
+       run: docker login -u mveyone -p ${{ secrets.DOCKER_TOKEN }} && docker push mveyone/docker-imgage-auto-build:latest
